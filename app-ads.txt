@@ -1,0 +1,43 @@
+2.App-ads.txt规范
+Ad source domain, your publisher ID, type of relationship (direct or reseller), ad source ID
+
+Ad source domain：平台的域名
+
+your publisher ID：变现账号在广告平台的ID
+
+type of relationship：有2个值，DIRECT代表是直接；RESELLER代表广告平台可以把广告展示机会转卖给第三方DSP或者SSP
+
+ad source ID：广告平台的ID
+
+这些值可以在变现后台找到，有些渠道还找不到，需要找AM。
+
+3.App-ads.txt注意事项
+1）在Appstore后台，或者Google Play后台有填写网址的入口；
+
+2）填写网址时，注意，不要带app-ads.txt这一级；如：https://<<主机名>>/app-ads.txt
+
+填写网址的时候，填https://<<主机名>>
+
+4.App-ads.txt 信息
+因为Appsflyer，App Annie，每年都会公布流量排行的榜单，排名前10或者前20的都接，肯定错不了。
+
+所以尝试着分析了一下voodoo的app-ads.txt；https://www.voodoo.io/app-ads.txt
+
+1）我们先来看一下，DIRECT有几个
+
+一共16个（按首字母排序），分别为：advangelists.com，aol.com，applovin.com，Chartboost.com，fyber.com，google.com，inmobi.com，ironsrc.com，Mintegral.com，mopub.com，Ogury.com，streamkey.tv，tapjoy.com，toutiao.com，unity3d.com，Vungle.com，
+
+2）看看voodoo有多少个google.com，一共27个。说明好多流量都转到了admob，截取几个贴在这里
+
+google.com, pub-6354112556091525, DIRECT, f088c47fec942fa0
+
+google.com, pub-7117884512964063, RESELLER
+
+google.com, pub-9685734445476814, RESELLER, f08c47fec0942fa0
+
+google.com, pub-9932765243585041, RESELLER
+
+作者：fableyjg
+链接：https://www.jianshu.com/p/e8280adc8ac9
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
